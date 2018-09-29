@@ -78,7 +78,7 @@ export function repeat<T>(
         const endNode = createMarker();
         container.insertBefore(marker, currentMarker);
         container.insertBefore(endNode, currentMarker);
-        itemPart = new NodePart(part.templateFactory);
+        itemPart = new NodePart(part.options);
         itemPart.insertAfterNode(marker);
         if (key !== undefined) {
           keyMap.set(key, itemPart);
